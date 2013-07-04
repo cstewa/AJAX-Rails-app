@@ -1,0 +1,40 @@
+#container_of_results {
+	border: solid grey; 
+	background-color: white;
+	width: 500px;
+	height: 600px;
+	float: right;
+}
+
+#header {
+	border: solid;
+	background-color: black;
+	width: 100%;
+	margin: auto;
+	height: 70px;
+	padding: 5px;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+#forms {
+	color: grey;
+	float: left;
+	margin-top: 100px;
+	margin-left: 15px;
+	border: dotted; 
+	padding: 15px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+#last_name {
+	margin-left: 12px;
+}
+
+#user_number {
+	margin-left: 13px;
+}

@@ -3,12 +3,11 @@ $(document).ready(function(){
 		$.ajax({
 			type: "get",
 			url: "http://numbersapi.com/" + $("#user_number").val(),
-
       complete: function(response, status_text){
-      	$("div").prepend(response.responseText+ "<br>"); 
+      	$("#container_of_results").prepend(response.responseText+ "<br>"); 
       }
 		});
-	event.preventDefault();
+		event.preventDefault();
 	});
 
 	$("#name").on("submit", function(event){	
@@ -18,10 +17,10 @@ $(document).ready(function(){
 
       complete: function(response, status_text){
       	var joke = $.parseJSON(response.responseText).value.joke;
-      	$("div").prepend(joke+ "<br>");
+      	$("#container_of_results").prepend(joke+ "<br>");
       }
 		});
-	event.preventDefault();
+	  event.preventDefault();
 	});
 
 });
